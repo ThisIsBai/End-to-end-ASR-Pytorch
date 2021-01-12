@@ -77,7 +77,7 @@ class DlhlpTextDataset(Dataset):
                 self.encode_on_fly = True
                 with open(join(path, s), 'r') as f:
                     all_sent += f.readlines()
-            file_list += list(Path(join(path, s)).rglob("*.flac"))
+            file_list += list(Path(join(path, s)).rglob("*.wav"))
         assert (len(file_list) > 0) or (len(all_sent)
                                         > 0), "No data found @ {}".format(path)
 
