@@ -16,7 +16,7 @@ def read_text(file):
     '''Get transcription of target wave file, 
        it's somewhat redundant for accessing each txt multiplt times,
        but it works fine with multi-thread'''
-    src_file = file.rsplit('/', 1)[0] = '/bopomo.trans.txt'
+    src_file = file.rsplit('/', 1)[0] + '/bopomo.trans.txt'
     idx = file.split('/')[-1].split('.')[0]
 
     with open(src_file, 'r') as fp:
