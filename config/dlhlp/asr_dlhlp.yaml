@@ -1,7 +1,7 @@
 data:
   corpus:                                 
     name: 'dlhlp'                   # Specify corpus
-    path: 'data/DLHLP'          # Path to raw dlhlp dataset
+    path: 'DLHLP'          # Path to raw dlhlp dataset
     train_split: ['train'] # Name of data splits to be used as training set
     dev_split: ['dev']              # Name of data splits to be used as validation set
     bucketing: True                       # Enable/Disable bucketing 
